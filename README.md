@@ -1,2 +1,4 @@
-# Pemrograman-web
-Tugas 1 Modul 2
+# Data Diri Praktikan
+
+Nama : Angelia Regina Dwi Kartika
+NIM : 105220039
