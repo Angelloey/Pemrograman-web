@@ -1,0 +1,145 @@
+
+body{
+	font-family: sans-serif;
+    background-color: #0abdb4;
+    color: #f1f1f1;
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.totalScore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;
+}
+
+.totalScore > * {
+    text-align: center;
+    background-color: #171d1f;
+    border-style: solid;
+    border-color: #f1f1f1;
+    border-radius: 12px;
+    margin: 16px;
+    padding: 16px;
+    height: 150px;
+    width: 150px;
+}
+
+.score { font-size: 72px; }
+   
+.playerContainer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.button {
+    background-color: #0abdb4;
+    border-radius: 12px;
+    border: none;
+    height: 150px;
+    width: 150px;
+    padding: 16px;
+    margin: 16px;
+    cursor: pointer;    
+}
+
+.rock { 
+    background-image:url('images/rock.jpg'); 
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    border: 1px dashed silver;
+    transition: .5s;
+}
+
+.paper { 
+    background-image:url('images/paper.jpg'); 
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    border: 1px dashed silver;
+    transition: .5s;
+}
+
+.scissor { 
+    background-image:url('images/scissors.jpg'); 
+    background-size: 186px;
+    width: 200px;
+    height: 200px;
+    border: 1px dashed silver;
+    transition: .5s;
+}
+
+.endContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+}
+
+.endContainer > #moves {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+
+img{
+    width: 30%;
+}
+
+#moves img {
+    margin: 20px;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: #0abdb4;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.restart {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #3aa19b;
+    color:#000000;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.restart:hover { background-color: #0abdb4; }
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}

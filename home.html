@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Rock Paper Scissor</h1>
+    </div>
+
+    <div class="totalScore">
+        <div class="playerScore">
+            <h2>Player</h2>
+            <div class="score" id="player">0</div>
+        </div>
+        <div class="computer-score">
+            <h2>Computer</h2>
+            <div class="score" id="computer">0</div>
+        </div>
+    </div>
+
+    <div class="playerContainer">
+        <button class="button rock" onclick="play(0)"></button>
+        <button class="button paper" onclick="play(1)"></button>
+        <button class="button scissor" onclick="play(2)"></button>
+    </div>
+
+    <div class="endContainer">
+        <h2>Last Moves</h2>
+        <div id="moves">
+            <img class="playerMove">
+            <h1>VS</h1>
+            <img class="AIMove">
+        </div>
+    </div>
+
+    
+    <div class="modal">
+        <div class="modal-content">
+            <h1>The Winner is:</h1>
+            <div id="winner"></div>
+            <button class="restart" onclick="restart()"><h2>Play Again!</h2></button>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
