@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Music App</title>
+</head>
+
+<body onLoad="getArtistName();getArtistName2();getArtistName3();getArtistName4();getArtistName5()">
+<header>
+    <div class="menu_side">
+        <div class="illustration">
+            <img src="images/logomusic.png" alt="">
+            <h1>Berdendang</h1>
+        </div>
+        <div class="playlist">
+            <h4 class="active">
+                <span></span>
+                <i class="bi bi-music-note-beamed"></i> 
+                Home 
+            </h4>
+            <h4>
+                <span></span>
+                <i class="bi bi-music-note-beamed"></i> 
+                Last Listening
+            </h4>
+            <h4 >
+                <span></span>
+                <i class="bi bi-music-note-beamed"></i> 
+                Recommended
+            </h4>
+        </div>            
+    </div>
+
+    <div class="song_side">
+        <nav>
+            <ul>
+                <li>Songs <span></span></li>
+                <li><a href="detail-info/detail1/detail.html">Detail</a></li>
+            </ul>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search Music...">
+            </div>
+        </nav>
+
+        <header class="content">
+            <h1 id="judulAwal">The 1975 - Sincerity is Scary</h1>
+            <p id="lyric">
+                Why can't we be friends, when we are lovers?
+                Because it always ends with us hating each other
+                <br>
+                Instead of calling me out, you should be pulling me in
+                <br>
+                I've just got one more thing to say
+            </p>
+            <div class="buttons">
+                <button><a href="/detail-info/detail1/detail.html">Detail</a></button>
+            </div>
+
+            <section class="product"> 
+                <h2 class="product-category">Popular Song</h2>
+                <div class="product-container">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img id="picArtist" src="images/ariana.jpeg" class="product-thumb" alt="">
+                            <button class="card-btn"><a href="/detail-info/detail2/detail2.html">Detail</a></button>
+                        </div>
+                        <div class="product-info">
+                            <h2 id="artistName" class="product-brand">Artist Name</h2>
+                            <p id="artistSong" class="product-short-description">Artis Songs</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img id="picArtist2" src="https://e1.pxfuel.com/desktop-wallpaper/661/628/desktop-wallpaper-tyler-the-creator-orange-rap-taylor-the-creator-aesthetic-thumbnail.jpg" class="product-thumb" alt="">
+                            <button class="card-btn"><a href="/detail-info/detail3/detail3.html">Detail</a></button>
+                        </div>
+                        <div class="product-info">
+                            <h2 id="artistName2" class="product-brand">Artist Name</h2>
+                            <p id="artistSong2" class="product-short-description">Artis Songs</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img id="picArtist3" src="images/ariana.jpeg" class="product-thumb" alt="">
+                            <button class="card-btn"><a href="/detail-info/detail4/detail4.html">Detail</a></button>
+                        </div>
+                        <div class="product-info">
+                            <h2 id="artistName3" class="product-brand">Artist Name</h2>
+                            <p id="artistSong3" class="product-short-description">Artis Songs</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img id="picArtist4" src="images/ariana.jpeg" class="product-thumb" alt="">
+                            <button class="card-btn"><a href="/detail-info/detail5/detail5.html">Detail</a></button>
+                        </div>
+                        <div class="product-info">
+                            <h2 id="artistName4" class="product-brand">Artist Name</h2>
+                            <p id="artistSong4" class="product-short-description">Artis Songs</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img id="picArtist5" src="https://e1.pxfuel.com/desktop-wallpaper/661/628/desktop-wallpaper-tyler-the-creator-orange-rap-taylor-the-creator-aesthetic-thumbnail.jpg" class="product-thumb" alt="">
+                            <button class="card-btn"><a href="/detail-info/detail6/detail6.html">Detail</a></button>
+                        </div>
+                        <div class="product-info">
+                            <h2 id="artistName5" class="product-brand">Artist Name</h2>
+                            <p id="artistSong5" class="product-short-description">Artis Songs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
